@@ -1,0 +1,46 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <RootNamespace>FusionHUD_Performance_Overlay</RootNamespace>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <Platforms>AnyCPU;x64</Platforms>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>Assets\FusionHUD.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Libraries\**" />
+    <Compile Remove="Tools\**" />
+    <EmbeddedResource Remove="Libraries\**" />
+    <EmbeddedResource Remove="Tools\**" />
+    <None Remove="Libraries\**" />
+    <None Remove="Tools\**" />
+    <Page Remove="Libraries\**" />
+    <Page Remove="Tools\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Assets\FusionHUD.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Dependencies\AMD\lib\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\..\..\..\Program Files\AMD\RyzenMasterMonitoringSDK\lib\Device.lib" Link="Dependencies\AMD\lib\Device.lib" />
+    <None Include="..\..\..\..\..\..\Program Files\AMD\RyzenMasterMonitoringSDK\lib\Platform.lib" Link="Dependencies\AMD\lib\Platform.lib" />
+    <None Include="RTSS\RTSSFPSReader.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="LibreHardwareMonitorLib" Version="0.9.6" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="8.0.1" />
+    <PackageReference Include="NvAPIWrapper.Net" Version="0.8.1.101" />
+  </ItemGroup>
+
+</Project>

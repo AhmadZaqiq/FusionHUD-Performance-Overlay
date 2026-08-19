@@ -1,0 +1,23 @@
+﻿.vs/
+**/bin/
+**/obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+[Bb]uild/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+TestResults/
+*.dll
+*.exe
+
+# Local backups
+_Backup_Before_Architecture_Fix/
+_Backup_Before_Rollback_Current/
+
+# Accidental empty files
+cd
+dumpbin

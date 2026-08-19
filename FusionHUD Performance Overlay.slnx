@@ -1,0 +1,12 @@
+<Solution>
+  <Configurations>
+    <Platform Name="Any CPU" />
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="FusionHUD Performance Overlay/FusionHUD Performance Overlay.csproj">
+    <Platform Solution="Debug|x64" Project="x64" />
+  </Project>
+  <Project Path="FusionHUD.AMD/FusionHUD.AMD.vcxproj" Id="f18a11cb-cbc6-486b-83ce-7e5bf95bdb4d" />
+  <Project Path="FusionHUD.Monitoring/FusionHUD.Monitoring.csproj" Id="45f72cf6-8c26-4cb5-840b-c4e76be921a7" />
+</Solution>
